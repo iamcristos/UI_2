@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import 'normalise.less';
+@import 'variable.less';
+@import 'mixins.less';
+@import "../Component/navigationComponent/navigation.less";
+@import 'section.less';
+@import 'footer.less';
+@import '../Component/carousel/carousel.less';
+
+:root {
+    html {
+        font-size: 62.5%;
+      }
+}
+
+html, body {
+  font-display: fallback;
+  height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    @media(@mediaTab) {
+      margin-top: 3.0rem;
+    }
+  }
+  
+  h1, h2, h3, h4, h5 {
+    // font-family: 'Indie Flower', cursive;
+    font-family: 'Montserrat' , sans-serif;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    @media(@mediaTab) {
+      font-size: 4.0rem;
+    }
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    @media(@mediaTab) {
+      font-size: 2.0rem;
+    }
+  }
+
+  h3{
+    font-size: 1.0rem;
+    @media(@mediaTab) {
+      font-size: 1.5rem;
+    }
+  }
+  
+  h4 {
+    font-size: 1rem;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 1rem;
+    @media(@mediaTab) {
+      font-size: 1.6rem;
+    }
+  }  

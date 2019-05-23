@@ -1,0 +1,192 @@
+.top-section{
+    position: relative;
+    width:100%;
+    background-image: url('/assests/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    padding: 1.5rem;
+    h1{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        line-height: 2;
+        @media(@mediaDesktop) {
+            line-height: 2.5;
+            font-size: 3rem;
+            margin-top: 5rem;
+        }
+    };
+    
+    .overlay {
+     position: absolute;
+     color:@white;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0,0,0,0.4);
+    text-align: center;
+     button{
+        margin-top: 15px;
+         width: 70%;
+         height: 10%;
+         border: none;
+         border-radius: .5rem;
+         color: @white;
+         background-color: @lightBlueColor;
+         font-size: 1rem;
+         @media(@mediaTab) {
+             width: 32%;
+             margin-top: 1.2rem;
+             font-size: 1.3rem;
+         }
+         @media(@mediaDesktop) {
+             width: 30%;
+             margin-top: 1.7rem;
+             &:hover{
+                font-size: 1.7rem;
+                width: 32%;
+                background-color: @white;
+                color: @lightBlueColor;
+                transition: all .3s;
+                transition-timing-function: ease-in-out;
+             };
+         }
+     }
+    }
+    @media(@mediaDesktop) {
+        height: 500px;
+        width: 100%;
+        margin-bottom: 1rem
+    }
+}
+
+.main-section{
+    margin: 1rem auto;
+    .info{
+        text-align: center;
+        padding: .5rem;
+        .card;
+        margin: 1rem;
+        @media(@mediaTab){
+            padding: 1rem;
+            margin: .5rem 2.9rem;
+        }
+        h2{
+            font-weight: bolder;
+        }
+        p{
+            margin: .5rem 2rem;
+        }
+    }
+}
+
+.card-section{
+    .displayFlex(column, space-around);
+    width: 98%;
+    @media(@mediaTab) {
+        margin: 1.9rem;
+    };
+    @media(@mediaDesktop){
+        .displayFlex(row, space-around);
+        width: 95%;
+        margin: 3rem
+    };
+    .card-login{
+        text-align: center;
+        .card;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: .4rem;
+        @media(@mediaTab) {
+            margin: 1.9rem;
+        };
+        img {
+            width: 100%;
+            @media(@mediaTab) {
+                width: 80%;
+            };
+        }
+        @media(@mediaDesktop) {
+            width: 31%;
+        }
+    }
+}
+
+.about-section{
+    margin-top: 3rem;
+    @media(@mediaTab) {
+        margin-top: 3.7rem;
+    }
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        @media(@mediaTab) {
+            font-size: 3rem
+        }
+    }
+}
+.team-info{
+    .displayFlex(row, space-around);
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    .team-card{
+        .displayFlex(column, center);
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        border-radius: .3rem;
+        .card;
+        margin: 1rem .5rem;
+        padding: 1rem;
+        background-color: @cardBackground;
+        @media(@mediaTab) {
+            width: 45%
+        }
+        h3 {
+            margin: .5rem 0;
+            font-weight: bolder;
+            @media(@mediaTab) {
+                font-size: 1.3rem
+            }
+        }
+        p{
+            font-size: 1rem;
+            
+        }
+        img{
+            width:50%;
+            @media(@mediaDesktop) {
+                // width: 100%
+            }
+        }
+
+        a{
+            text-decoration: none;
+            background-color:  @white;
+            color:@lightBlueColor
+        }
+
+        i{
+            @media(@mediaTab) {
+                font-size: 100%;
+                margin: .5rem;
+            };
+            @media(@mediaDesktop) {
+                height: 100%;
+                font-size: 250%;
+                margin: .5rem;
+
+                &:hover{
+                    background-color: @lightBlueColor;
+                    color: @white;
+                }
+            }
+        }
+    }
+
+}
